@@ -1,0 +1,6 @@
+linters:
+  stylelint:
+    fixer: true
+
+fixers:
+  enable: true
