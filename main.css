@@ -4,13 +4,33 @@
 .container-fluid {
   max-width: 1310px;
 }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 header > div {
   background-color: var(--nw-red);
 }
+
 header svg {
   fill: white;
   width: 132px;
   height: 20px;
+}
+nav {
+  position: relative;
+}
+nav > div::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  display: block;
+  width: 78px;
+  background-color: #f72210;
+  border-left: 12px solid white;
+  border-top: 13px solid #f72210;
 }
 .subscribe-btn,
 .subscribe-btn:hover {
@@ -41,6 +61,19 @@ header svg {
   width: 30px;
   height: 4px;
   background-color: #fb9a94;
+}
+.search {
+  position: relative;
+  margin-right: calc(78px + 2rem);
+}
+.search::after {
+  content: "";
+  background: url(https://g.newsweek.com/www/images/icon-search-glass.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 4px;
+  right: -28px;
 }
 @media (min-width: 992px) {
   header svg {
