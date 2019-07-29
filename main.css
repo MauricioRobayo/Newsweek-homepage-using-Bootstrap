@@ -1,0 +1,50 @@
+:root {
+  --nw-red: #f72210;
+}
+.container-fluid {
+  max-width: 1310px;
+}
+header > div {
+  background-color: var(--nw-red);
+}
+header svg {
+  fill: white;
+  width: 132px;
+  height: 20px;
+}
+.subscribe-btn,
+.subscribe-btn:hover {
+  background-color: white;
+  color: var(--nw-red);
+}
+.subscribe-btn svg {
+  fill: var(--nw-red);
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+}
+.genericon {
+  cursor: pointer;
+}
+.genericon-menu > span {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.genericon-menu::before,
+.genericon-menu::after {
+  content: "";
+}
+.genericon-menu > span,
+.genericon-menu::before,
+.genericon-menu::after {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #fb9a94;
+}
+@media (min-width: 992px) {
+  header svg {
+    width: 396px;
+    height: 60px;
+  }
+}
