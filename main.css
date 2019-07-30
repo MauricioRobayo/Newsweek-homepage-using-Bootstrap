@@ -101,12 +101,12 @@ figure figcaption {
 figcaption a {
   color: var(--nw-red);
 }
+h5 a {
+  color: black;
+}
 figcaption a:hover {
   color: var(--nw-red);
   text-decoration: none;
-}
-h5 a {
-  color: black;
 }
 h5 a:hover {
   color: black;
