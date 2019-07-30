@@ -82,11 +82,35 @@ nav > div::before {
 main {
   background-color: white;
 }
-main section {
-  border: 1px solid lawngreen;
+article {
+  line-height: 1.25rem;
 }
-main article {
-  border: 1px solid magenta;
+figure {
+  display: grid;
+}
+figure img {
+  grid-area: 1 / 1 / -1 / -1;
+}
+figure figcaption {
+  grid-area: 1 / 1 / -1 / -1;
+  align-self: end;
+  justify-self: start;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.25rem 1rem;
+}
+figcaption a {
+  color: var(--nw-red);
+}
+figcaption a:hover {
+  color: var(--nw-red);
+  text-decoration: none;
+}
+h5 a {
+  color: black;
+}
+h5 a:hover {
+  color: black;
+  text-decoration: underline var(--nw-red);
 }
 @media (min-width: 992px) {
   header svg {
