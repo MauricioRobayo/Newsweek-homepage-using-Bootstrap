@@ -1,5 +1,9 @@
 :root {
   --nw-red: #f72210;
+  --nw-main-bg: #f4f5f6;
+}
+body {
+  background-color: var(--nw-main-bg);
 }
 .container-fluid {
   max-width: 1310px;
@@ -12,7 +16,6 @@ header {
 header > div {
   background-color: var(--nw-red);
 }
-
 header svg {
   fill: white;
   width: 132px;
@@ -20,6 +23,7 @@ header svg {
 }
 nav {
   position: relative;
+  background-color: white;
 }
 nav > div::before {
   position: absolute;
@@ -74,6 +78,15 @@ nav > div::before {
   position: absolute;
   top: 4px;
   right: -28px;
+}
+main {
+  background-color: white;
+}
+main section {
+  border: 1px solid lawngreen;
+}
+main article {
+  border: 1px solid magenta;
 }
 @media (min-width: 992px) {
   header svg {
