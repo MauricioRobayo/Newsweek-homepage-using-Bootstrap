@@ -141,10 +141,11 @@ h5 a:hover,
   text-decoration: none;
 }
 .media-img {
-  width: 135px;
+  width: 258px;
 }
 .sign-up {
   background-color: var(--nw-background);
+  max-width: 330px;
 }
 .cta {
   display: flex;
@@ -168,5 +169,10 @@ h5 a:hover,
 @media (max-width: 991px) and (min-width: 768px) {
   .sponsor {
     max-width: 330px;
+  }
+}
+@media (min-width: 768px) {
+  .media-img {
+    width: 135px;
   }
 }
