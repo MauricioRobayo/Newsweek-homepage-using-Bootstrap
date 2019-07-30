@@ -1,9 +1,9 @@
 :root {
   --nw-red: #f72210;
-  --nw-main-bg: #f4f5f6;
+  --nw-background: #f4f5f6;
 }
 body {
-  background-color: var(--nw-main-bg);
+  background-color: var(--nw-background);
 }
 .container-fluid {
   max-width: 1310px;
@@ -41,11 +41,15 @@ nav > div::before {
   background-color: white;
   color: var(--nw-red);
 }
+.sign-up svg,
 .subscribe-btn svg {
   fill: var(--nw-red);
   width: 8px;
   height: 14px;
   margin-left: 10px;
+}
+.sign-up svg {
+  fill: var(--white);
 }
 .genericon {
   cursor: pointer;
@@ -82,15 +86,93 @@ nav > div::before {
 main {
   background-color: white;
 }
-main section {
-  border: 1px solid lawngreen;
+article {
+  line-height: 1.25rem;
 }
-main article {
-  border: 1px solid magenta;
+figure {
+  display: grid;
+}
+figure img {
+  grid-area: 1 / 1 / -1 / -1;
+}
+figure figcaption {
+  grid-area: 1 / 1 / -1 / -1;
+  align-self: end;
+  justify-self: start;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.25rem 1rem;
+}
+figcaption a {
+  color: var(--nw-red);
+}
+h5 a,
+h6 a {
+  color: black;
+}
+.sign-up a {
+  color: black;
+}
+figcaption a:hover {
+  color: var(--nw-red);
+}
+h6 a:hover {
+  text-decoration: none;
+  color: var(--nw-red);
+}
+h5 a:hover,
+.more-stories h6 a:hover {
+  color: black;
+  text-decoration: underline var(--nw-red);
+}
+.culture-and-travel {
+  background-color: #f4f5f7;
+}
+.culture-and-travel .category {
+  background-color: #c2d4d7;
+  color: #272727;
+}
+.culture-and-travel .category:hover {
+  background-color: #272727;
+  color: #c2d4d7;
+}
+.section-header,
+.section-header:hover {
+  color: var(--secondary);
+  text-decoration: none;
+}
+.media-img {
+  width: 258px;
+}
+.sign-up {
+  background-color: var(--nw-background);
+  max-width: 330px;
+}
+.cta {
+  display: flex;
+  align-items: center;
+  line-height: 16px;
+}
+.icon-n {
+  display: block;
+  width: 29px;
+  height: 28px;
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
+    no-repeat #f72210;
+  margin-right: 10px;
 }
 @media (min-width: 992px) {
   header svg {
     width: 396px;
     height: 60px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .sponsor {
+    max-width: 330px;
+  }
+}
+@media (min-width: 768px) {
+  .media-img {
+    width: 135px;
   }
 }
