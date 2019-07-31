@@ -7,6 +7,7 @@ body {
 }
 .container-fluid {
   max-width: 1310px;
+  background-color: white;
 }
 header {
   position: sticky;
@@ -87,9 +88,6 @@ nav > div::before {
   top: 4px;
   right: -28px;
 }
-main {
-  background-color: white;
-}
 article {
   line-height: 1.2rem;
 }
@@ -150,7 +148,7 @@ h5 a:hover,
 .media-img {
   width: 258px;
 }
-.sign-up {
+.latest-news .sign-up {
   background-color: var(--nw-background);
   max-width: 330px;
 }
@@ -178,6 +176,23 @@ figcaption.count-link {
     0 0 / contain no-repeat transparent;
   padding: 0;
 }
+.subscribe {
+  background-color: var(--nw-background);
+}
+.subscribe figure {
+  position: relative;
+  padding-right: 80px;
+}
+.subscribe figure img:last-child {
+  position: absolute;
+  left: 80px;
+  top: 12px;
+}
+.newsletter img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
 @media (min-width: 992px) {
   header svg {
     width: 396px;
@@ -192,5 +207,9 @@ figcaption.count-link {
 @media (min-width: 768px) {
   .media-img {
     width: 135px;
+  }
+  .newsletter img {
+    max-width: 191px;
+    height: 294px;
   }
 }
