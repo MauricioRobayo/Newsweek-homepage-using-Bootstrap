@@ -29,7 +29,7 @@ nav > div::before {
   position: absolute;
   top: 0;
   right: 0;
-  content: "";
+  content: '';
   display: block;
   width: 78px;
   background-color: #f72210;
@@ -41,6 +41,7 @@ nav > div::before {
   background-color: white;
   color: var(--nw-red);
 }
+.in-the-magazine svg,
 .sign-up svg,
 .subscribe-btn svg {
   fill: var(--nw-red);
@@ -51,6 +52,9 @@ nav > div::before {
 .sign-up svg {
   fill: var(--white);
 }
+.in-the-magazine svg {
+  fill: var(--dark);
+}
 .genericon {
   cursor: pointer;
 }
@@ -60,7 +64,7 @@ nav > div::before {
 }
 .genericon-menu::before,
 .genericon-menu::after {
-  content: "";
+  content: '';
 }
 .genericon-menu > span,
 .genericon-menu::before,
@@ -75,7 +79,7 @@ nav > div::before {
   margin-right: calc(78px + 2rem);
 }
 .search::after {
-  content: "";
+  content: '';
   background: url(https://g.newsweek.com/www/images/icon-search-glass.svg);
   width: 20px;
   height: 20px;
@@ -87,20 +91,23 @@ main {
   background-color: white;
 }
 article {
-  line-height: 1.25rem;
+  line-height: 1.2rem;
 }
-figure {
+.caption-inside {
   display: grid;
 }
-figure img {
+.caption-inside > * {
   grid-area: 1 / 1 / -1 / -1;
 }
-figure figcaption {
-  grid-area: 1 / 1 / -1 / -1;
+.caption-inside figcaption {
   align-self: end;
   justify-self: start;
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0.25rem 1rem;
+}
+.category {
+  background-color: var(--nw-red);
+  color: white;
 }
 figcaption a {
   color: var(--nw-red);
@@ -159,6 +166,17 @@ h5 a:hover,
   background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
     no-repeat #f72210;
   margin-right: 10px;
+}
+figcaption.count-link {
+  width: 70px;
+  height: 52px;
+  font-size: 20px;
+  line-height: 58px;
+  text-indent: 5px;
+  text-align: center;
+  background: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png)
+    0 0 / contain no-repeat transparent;
+  padding: 0;
 }
 @media (min-width: 992px) {
   header svg {
