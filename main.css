@@ -7,6 +7,7 @@ body {
 }
 .container-fluid {
   max-width: 1310px;
+  background-color: white;
 }
 header {
   position: sticky;
@@ -40,6 +41,13 @@ nav > div::before {
 .subscribe-btn:hover {
   background-color: white;
   color: var(--nw-red);
+}
+footer svg {
+  width: 236px;
+  height: 36px;
+  fill: var(--nw-red);
+  margin-bottom: 4px;
+  margin-right: 1rem;
 }
 .in-the-magazine svg,
 .sign-up svg,
@@ -86,9 +94,6 @@ nav > div::before {
   position: absolute;
   top: 4px;
   right: -28px;
-}
-main {
-  background-color: white;
 }
 article {
   line-height: 1.2rem;
@@ -150,7 +155,7 @@ h5 a:hover,
 .media-img {
   width: 258px;
 }
-.sign-up {
+.latest-news .sign-up {
   background-color: var(--nw-background);
   max-width: 330px;
 }
@@ -178,6 +183,33 @@ figcaption.count-link {
     0 0 / contain no-repeat transparent;
   padding: 0;
 }
+.subscribe {
+  background-color: var(--nw-background);
+}
+.social-media {
+  font-size: 2rem;
+}
+.subscribe figure {
+  position: relative;
+  padding-right: 80px;
+}
+.newsletter img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.subscribe figure img:last-child {
+  position: absolute;
+  left: 80px;
+  top: 12px;
+}
+.footer-menu {
+  font-size: 0.9rem;
+}
+.footer-menu li {
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
 @media (min-width: 992px) {
   header svg {
     width: 396px;
@@ -192,5 +224,15 @@ figcaption.count-link {
 @media (min-width: 768px) {
   .media-img {
     width: 135px;
+  }
+  .newsletter img {
+    max-width: 191px;
+    height: 294px;
+  }
+  .footer-menu li {
+    border-right: 1px solid #d9d9d9;
+  }
+  .footer-menu li:last-child {
+    border-right: none;
   }
 }
