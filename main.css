@@ -216,28 +216,11 @@ figcaption.count-link {
   margin-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
-  header svg {
-    width: 132px;
-  }
-}
-@media (min-width: 992px) {
-  header svg {
-    width: 396px;
-  }
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .sponsor {
-    max-width: 330px;
-  }
-}
-@media (max-width: 767px) and (min-width: 576px) {
-  .media-img {
-    width: 258px;
-  }
-}
-@media (min-width: 768px) {
   header {
     font-size: 1rem;
+  }
+  header svg {
+    width: 132px;
   }
   .newsletter img {
     max-width: 191px;
@@ -248,5 +231,20 @@ figcaption.count-link {
   }
   .footer-menu li:last-child {
     border-right: none;
+  }
+}
+@media (min-width: 992px) {
+  header svg {
+    width: 396px;
+  }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+  .media-img {
+    width: 258px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .sponsor {
+    max-width: 330px;
   }
 }
