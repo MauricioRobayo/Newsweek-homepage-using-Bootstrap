@@ -179,6 +179,9 @@ figcaption.count-link {
 .subscribe {
   background-color: var(--nw-background);
 }
+.social-media {
+  font-size: 2rem;
+}
 .subscribe figure {
   position: relative;
   padding-right: 80px;
@@ -200,6 +203,13 @@ footer svg {
   margin-bottom: 4px;
   margin-right: 1rem;
 }
+.footer-menu {
+  font-size: 0.9rem;
+}
+.footer-menu li {
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
 @media (min-width: 992px) {
   header svg {
     width: 396px;
@@ -218,5 +228,11 @@ footer svg {
   .newsletter img {
     max-width: 191px;
     height: 294px;
+  }
+  .footer-menu li {
+    border-right: 1px solid #d9d9d9;
+  }
+  .footer-menu li:last-child {
+    border-right: none;
   }
 }
