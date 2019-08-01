@@ -193,7 +193,13 @@ figcaption.count-link {
   left: 80px;
   top: 12px;
 }
-
+footer svg {
+  width: 236px;
+  height: 36px;
+  fill: var(--nw-red);
+  margin-bottom: 4px;
+  margin-right: 1rem;
+}
 @media (min-width: 992px) {
   header svg {
     width: 396px;
