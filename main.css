@@ -20,8 +20,8 @@ header > div {
 }
 header svg {
   fill: white;
-  width: 132px;
-  height: 20px;
+  width: 102px;
+  height: auto;
 }
 nav {
   position: relative;
@@ -215,10 +215,14 @@ figcaption.count-link {
   line-height: 1;
   margin-bottom: 0.5rem;
 }
+@media (min-width: 768px) {
+  header svg {
+    width: 132px;
+  }
+}
 @media (min-width: 992px) {
   header svg {
     width: 396px;
-    height: 60px;
   }
 }
 @media (max-width: 991px) and (min-width: 768px) {
