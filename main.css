@@ -13,6 +13,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1;
+  font-size: 0.85rem;
 }
 header > div {
   background-color: var(--nw-red);
@@ -41,6 +42,10 @@ nav > div::before {
 .subscribe-btn:hover {
   background-color: white;
   color: var(--nw-red);
+}
+.sticky-content {
+  position: sticky;
+  top: 0;
 }
 footer svg {
   width: 236px;
@@ -78,7 +83,7 @@ footer svg {
 .genericon-menu::before,
 .genericon-menu::after {
   display: block;
-  width: 30px;
+  width: 22px;
   height: 4px;
   background-color: #fb9a94;
 }
@@ -153,7 +158,7 @@ h5 a:hover,
   text-decoration: none;
 }
 .media-img {
-  width: 258px;
+  width: 135px;
 }
 .latest-news .sign-up {
   background-color: var(--nw-background);
@@ -187,7 +192,7 @@ figcaption.count-link {
   background-color: var(--nw-background);
 }
 .social-media {
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 .subscribe figure {
   position: relative;
@@ -221,9 +226,14 @@ figcaption.count-link {
     max-width: 330px;
   }
 }
-@media (min-width: 768px) {
+@media (max-width: 767px) and (min-width: 576px) {
   .media-img {
-    width: 135px;
+    width: 258px;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    font-size: 1rem;
   }
   .newsletter img {
     max-width: 191px;
