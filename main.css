@@ -42,6 +42,13 @@ nav > div::before {
   background-color: white;
   color: var(--nw-red);
 }
+footer svg {
+  width: 236px;
+  height: 36px;
+  fill: var(--nw-red);
+  margin-bottom: 4px;
+  margin-right: 1rem;
+}
 .in-the-magazine svg,
 .sign-up svg,
 .subscribe-btn svg {
@@ -195,13 +202,6 @@ figcaption.count-link {
   position: absolute;
   left: 80px;
   top: 12px;
-}
-footer svg {
-  width: 236px;
-  height: 36px;
-  fill: var(--nw-red);
-  margin-bottom: 4px;
-  margin-right: 1rem;
 }
 .footer-menu {
   font-size: 0.9rem;
