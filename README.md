@@ -5,3 +5,5 @@
 ![screenshot](screenshot.jpg)
 
 [Assignment link](https://www.theodinproject.com/courses/html5-and-css3/lessons/using-bootstrap).
+
+[Live preview](https://mauriciorobayo.github.io/Newsweek-homepage-using-Bootstrap/).
