@@ -1,8 +1,0 @@
-linters:
-  stylelint:
-    fixer: true
-  remarklint:
-    fixer: true
-
-fixers:
-  enable: true
